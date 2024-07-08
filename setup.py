@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from typing import List
 
-HYPEN_E_DOT = '-e .'
+HYPHEN_E_DOT = '-e .'
 
 def get_requirements(file_path: str) -> List[str]:
     """
@@ -12,8 +12,8 @@ def get_requirements(file_path: str) -> List[str]:
         requirements = file_obj.readlines()
         requirements = [req.strip() for req in requirements]
 
-        if HYPEN_E_DOT.strip() in requirements:
-            requirements.remove(HYPEN_E_DOT.strip())
+        if HYPHEN_E_DOT.strip() in requirements:
+            requirements.remove(HYPHEN_E_DOT.strip())
 
     return requirements
 
