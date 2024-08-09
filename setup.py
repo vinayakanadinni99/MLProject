@@ -19,7 +19,7 @@ def get_requirements(file_path: str) -> List[str]:
 
 setup(
     name='MLProject',
-    version='0.0.1',
+    version='0.0.2',
     author='Vinayak Anadinni',
     author_email='vinayak14anadinni@gmail.com',
     packages=find_packages(),
