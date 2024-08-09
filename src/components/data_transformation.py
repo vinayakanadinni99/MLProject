@@ -15,7 +15,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path = os.path.join('artifacts',"preprocessor.pkl")
+    preprocessor_obj_file_path = os.path.join("artifacts","preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -26,7 +26,7 @@ class DataTransformation:
         This function is responsible for data Transformation
         '''
         try:
-            numerical_columns = ['writing_score','reading_score']
+            numerical_columns = ["writing_score","reading_score"]
 
             categorical_columns = [
                 "gender",
